@@ -1,8 +1,9 @@
-import { exec } from "child_process";
-import { JSDOM } from "jsdom";
-import parse from "./parser";
+const
+    { exec } = require("child_process"),
+    { JSDOM } = require("jsdom"),
+    parse = require("./parser");
 
-export default function get (cmd)
+function get(cmd)
 {
     exec(cmd, { 'shell': 'powershell.exe' },
     (error, stdout, stderr) => {
@@ -23,7 +24,11 @@ export default function get (cmd)
 
             else {
                 const data = parse(res);
+                console.log('Founded appointment');
+                get(cmd);
             }
         }
     });
 }
+
+module.exports = get;

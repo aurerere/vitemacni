@@ -1,4 +1,6 @@
-export default function parse(dom)
+function parse(dom)
 {
 
 }
+
+module.exports = parse;

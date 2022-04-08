@@ -1,13 +1,21 @@
 {
   "name": "vitemacni",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A small JS script allowing to obtain the appointments available in Paris to redo an identity card without having to update the city's site permanently for 3 hours (yes, really: from 11 a.m. to 2 p.m.).",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurerere/vitemacni.git"
+  },
+  "author": "aurere",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurerere/vitemacni/issues"
+  },
+  "homepage": "https://github.com/aurerere/vitemacni#readme",
   "dependencies": {
     "jsdom": "^19.0.0"
   }
